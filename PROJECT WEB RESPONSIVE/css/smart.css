@@ -1,0 +1,13 @@
+@media (max-width: 640px), (orientation: portrait) {
+
+#contenedor {
+  width: 100%;
+}
+.imagen {
+  display: block;
+  width: 100%;
+  transition: all 0.4s linear;
+}
+
+
+}

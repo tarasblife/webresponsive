@@ -1,0 +1,219 @@
+h1 {
+  color: red;
+}
+#wrapper {
+  max-width: 1024px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.somos {
+  float: left;
+  margin: 0 10px;
+}
+.about {
+  padding: 0px 10px;
+  font-family: 'open sans',sans-serif;
+  font-size: 1.2em;
+}
+
+a:link, a:visited {
+  color: #212429;
+  text-decoration: none;
+}
+
+/* Header */
+.flexible {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Logo */
+#logo img {
+  width: 400px;
+
+}
+#logo h3 {
+  display: inline-block;
+  align-self: center;
+  position: relative;
+}
+.subtitulo {
+  display: inline-block;
+  align-self: center;
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+h1, h2 {
+  color: #212429;
+}
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-variant: small-caps;
+  letter-spacing: 0.3em;
+
+}
+/* Barra de navegacion */
+nav {
+  background-color: #fff;
+
+}
+nav ul li {
+  font-family: 'open-sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  list-style-type: none;
+  display: inline-block;
+  padding: 18px 25px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+nav ul li:hover {
+  background-color: rgba(33, 36, 41, 0.4);
+}
+nav a, nav a:visited {
+  color: #212429;
+  text-decoration: none;
+
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+
+}
+.select a {
+  color: #1E2054;
+
+}
+
+/* Gallery */
+section#contenedor {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  }
+.imagen {
+  display: inline-block;
+  width: 49%;
+  position: relative; /*Posicion relativa respecto al elemento anterior*/
+}
+.imagen img {
+  width: 100%;
+  display: block;
+}
+.texto {
+  height: 30%; /* 30% respecto al elemento anterior (imagen)
+  Si ponemos 100% cubrira todo el elemento anterior (la imagen)*/
+  width: 80%;
+  background-color: #212429;
+  position: absolute; /*Posicion absoluta respecto al elemento anterior*/
+  bottom: 0px;
+  color: lightgrey;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 1.4em;
+  text-indent: 2%;
+  padding-top: 2%;
+  opacity: 0.8;
+  border-top-right-radius: 24px;
+}
+
+/************************************
+            titulo imagenes
+*************************************/
+.pictitle a {
+  position: absolute;
+  background-color: #212429;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 1.6;
+  border-radius: 24px 24px;
+  margin: 10px 0 0 30px;
+  padding: 10px 20px;
+}
+
+
+/*Footer*/
+footer {
+  background-color: #212429;
+  color: grey;
+  font-size: 0.8em;
+  text-align: center;
+  padding-bottom: 10px;
+
+}
+.social {
+  width: 40px;
+  margin: 30px 5px;
+  filter: sepia(60%);
+}
+.social:hover {
+  filter: sepia(0%);
+}
+footer p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+}
+footer p a:link, footer p a:visited {
+  color: grey;
+}
+/************************************
+******** PAGINA DE CONTACTO *********
+*************************************
+*************************************/
+.contact, .contact a {
+  font-family: 'open sans', sans-serif;
+  color: grey;
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  min-height: 20px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding: 0 0 10px 30px;
+}
+.contact li.phone a {
+  background-image: url('../img/telephone.png');
+}
+.contact li.mail a {
+  background-image: url('../img/mail.png');
+}
+.contact li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+@media all and (max-width: 540px), (orientation: portrait) {
+  #logo img {
+    width: 300px;
+    margin: 0 auto;
+    -webkit-transition: width 0.8s ease-out;
+  }
+}
+  .flexible {
+    flex-direction: column;
+  }
+  #logo {
+    align-self: center;
+
+  .subtitulo {
+    align-self: center;
+    font-size: 1.4em;
+  }
+  nav {
+    align-self: center;
+  }
+  .somos {
+     float: none;
+  }
+}
